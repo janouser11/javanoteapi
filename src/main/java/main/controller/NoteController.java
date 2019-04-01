@@ -53,7 +53,6 @@ public class NoteController {
         } else {
             return response;
         }
-
     }
 
     @PostMapping
