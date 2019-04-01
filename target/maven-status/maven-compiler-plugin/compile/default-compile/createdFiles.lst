@@ -1,0 +1,9 @@
+main\domain\NoteRepositoryConfig.class
+main\host\Application.class
+main\data\NoteContext.class
+main\data\INoteContext.class
+main\data\NoteContextConfig.class
+main\domain\NoteRepository.class
+main\controller\NoteController.class
+main\domain\INoteRepository.class
+main\domain\Note.class
