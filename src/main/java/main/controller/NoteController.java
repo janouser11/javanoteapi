@@ -12,6 +12,7 @@ import java.util.List;
 
 import static org.springframework.http.HttpStatus.MULTI_STATUS;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("api/notes")
 public class NoteController {
