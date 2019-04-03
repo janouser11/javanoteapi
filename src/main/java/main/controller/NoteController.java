@@ -4,15 +4,12 @@ import main.domain.INoteRepository;
 import main.domain.Note;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
-import static org.springframework.http.HttpStatus.MULTI_STATUS;
 
-@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("api/notes")
 public class NoteController {
