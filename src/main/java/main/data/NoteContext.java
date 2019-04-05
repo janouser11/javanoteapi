@@ -56,6 +56,22 @@ public class NoteContext implements INoteContext {
 
     public Note AddNote (Note note){
         try {
+            //if note id is explicit set it
+            if (note.getId() > 0){
+                noteList.add(note);
+                return note;
+            }
+
+            //if there are no notes
+            if (noteList.size() > 0){
+                //get the last id in list to increment for new id
+                Note lastNote = noteList.get(noteList.size() -1);
+                note.setId(lastNote.getId() + 1);
+                noteList.add(note);
+                return note;
+            }
+            //otherwise
+            note.setId(1);
             noteList.add(note);
             return note;
         } catch(Exception err){
